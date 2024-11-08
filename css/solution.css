@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Page Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Section Styles */
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FFA500; /* Change color for each section */
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Section Specific Colors */
+#section-1 {
+    background-color: #F0E68C;
+}
+
+#section-2 {
+    background-color: #98FB98;
+}
+
+#section-3 {
+    background-color: #87CEFA;
+}
+
+/* Responsive Layout */
+
+/* Desktop: 992px and above */
+@media (min-width: 992px) {
+    .section {
+        width: 32%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .section:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Tablet: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+
+    .section:nth-child(2) {
+        margin-right: 0;
+    }
+
+    #section-3 {
+        width: 100%;
+    }
+}
+
+/* Mobile: 767px and below */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Spacing inside sections */
+.section p {
+    margin-top: 50px; /* Push the text below the title */
+}
